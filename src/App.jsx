@@ -1,12 +1,15 @@
 import React from 'react'
+import NavBar from './components/sections/NavBar'
+import Footer from './components/sections/Footer'
+import HomePage from './components/pages/HomePage'
 
 const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-krub font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <div>
+      <NavBar />
+      <HomePage />
+      <Footer />
+    </div>
   )
 }
 
