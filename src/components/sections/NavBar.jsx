@@ -13,19 +13,19 @@ const NavBar = () => {
     }
     // fixed top-0 left-0
     return (
-        <header className="w-full h-auto bg-transparent z-10 font-krub font-bold text-white whitespace-nowrap">
-            <nav className="w-full bg-sky-600 flex justify-between items-center font-large xl:px-40 lg:px-20 md:px-10 px-5 py-5 gap-5">
+        <header className="w-full h-auto bg-transparent z-10 font-krub font-bold text-white fixed top-0 left-0">
+            <nav className="w-full flex justify-between items-center font-large xl:px-40 lg:px-20 md:px-10 px-5 py-5 gap-5">
                 <Link to="/" className="flex items-center">
                     <img src={logo} alt="logo" className="sm:w-[160px] sm:h-[40px] w-[160px] h-[40px] object-contain max-w-none" />
                 </Link>
-                <ul className="list-none lg:flex hidden flex-row justify-center items-center gap-4">
+                <ul className="list-none lg:flex hidden flex-row justify-center items-center gap-4 whitespace-nowrap">
                     {NavUrls.map((menu, index) => (
                         <li key={index}>
                             <NavLink to={menu.url}>{menu.label}</NavLink>
                         </li>
                     ))}
                 </ul>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 whitespace-nowrap">
                     <button className="bg-white rounded-full text-[#00BCE7] px-4 py-2">Contact Us</button>
                     <button className="text-2xl"><AiOutlineSearch /></button>
 

@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         krub: ['Krub'],
-        aladin: ['Aladin']
+        aladin: ['Aladin'],
+        abel: ['Abel']
       }
     },
   },
