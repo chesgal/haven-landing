@@ -5,7 +5,7 @@ import { HeroLabels } from '../Content'
 const HeroSection = () => {
     return (
         <section className="w-full h-auto flex justify-between">
-            <div className="h-full w-fit font-krub text-white xl:mx-40 lg:mx-20 md:mx-10 mx-6 lg:py-20 md:py-30 py-20">
+            <div className="h-full w-fit text-white xl:mx-40 lg:mx-20 md:mx-10 mx-6 lg:py-20 md:py-30 py-20">
                 {/* <div className=""> */}
                     <h1 className="font-normal text-6xl mt-10 mb-10">{HeroLabels.heading}</h1>
                     <h2 className="font-light text-3xl mb-14">{HeroLabels.subHeading}</h2>

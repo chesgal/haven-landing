@@ -40,3 +40,22 @@ export const HeroLabels = {
         }
     ]
 }
+
+export const ServicesLabels = {
+    service: [
+        {
+            name: "Mortgages",
+            description: "Whatever your lending and home-buying goals, we offer expert, unbiased lending advice to help you achieve the best possible outcome.",
+        },
+        {
+            name: "KiwiSaver",
+            description: "We give you the right information to set your KiwiSaver up for success and reach your retirement goals.",
+        },
+        {
+            name: "Insurance",
+            description: "We make sure you have the right cover in place when you need it to help protect the things that matter most.",
+        },
+    ],
+    more: "Read more",
+    contactus: "Talk to us"
+}

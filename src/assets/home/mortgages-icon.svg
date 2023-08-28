@@ -1,0 +1,26 @@
+<svg width="21" height="78" viewBox="0 0 21 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="21" height="78" fill="#1E1E1E"/>
+<g id="Homepage Op2" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="5800" transform="translate(-159 -2078)" fill="url(#paint0_linear_0_1)"/>
+<g id="Group 218">
+<g id="Mortgages">
+<g id="Group 202">
+<g id="Group 17">
+<path id="Vector" d="M0.481445 77.3799L20.4999 77.3799L10.3696 40.9609L0.481445 77.3799Z" fill="#F7F5F4"/>
+<path id="Vector_2" d="M20.5 1.47749e-05L0.481567 -2.20849e-06L10.6119 36.4189L20.5 1.47749e-05Z" fill="#F7F5F4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="1453" y1="-102.588" x2="3944.38" y2="4924.89" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00BCE7"/>
+<stop offset="0.505208" stop-color="#006BC0"/>
+<stop offset="0.973958" stop-color="#00BCE7"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="5800" fill="white" transform="translate(-159 -2078)"/>
+</clipPath>
+</defs>
+</svg>
