@@ -60,6 +60,39 @@ export const ServicesLabels = {
     contactus: "Talk to us"
 }
 
+export const FeedbackLabels = {
+    heading: "Happy customers",
+    description: "We're helping people all over New Zealand set themselves up for a brighter future. Take a look at what they have to say about our services.",
+    contactus: "Talk to us",
+    testimonials: [
+        {
+            text: "Thanks to Haven, ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum!",
+            name: "Tom Morrison",
+            location: "Auckland"
+        },
+        {
+            text: "Thanks to hAven, ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque",
+            name: "Tom Morrison",
+            location: "Auckland"
+        },
+        {
+            text: "Thanks to haVen, ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum!",
+            name: "Tom Morrison",
+            location: "Auckland"
+        },
+        {
+            text: "Thanks to havEn, ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum!",
+            name: "Tom Morrison",
+            location: "Auckland"
+        },
+        {
+            text: "Thanks to haveN, ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum!",
+            name: "Tom Morrison",
+            location: "Auckland"
+        },
+    ]
+}
+
 export const PromotionsLabels = {
     heading: "Win a trip to the Cook Islands!",
     subHeading: [
