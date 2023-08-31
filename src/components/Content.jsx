@@ -171,3 +171,19 @@ export const PromotionsLabels = {
     ],
     more: "Learn more"
 }
+
+export const ContactUsLabels = {
+    heading: "Are you ready to get started?",
+    description: "Fill out your details below and someone from our friendly team will be in touch soon",
+    form: {
+        firstname: "First name",
+        lastname: "Last name",
+        email: "Email address",
+        contactno: "Contact number",
+        time: "Preferred contact time",
+        topic: "Enquiry topic",
+        message: "Your message",
+        subscribe: "I'd like to be kept up to date with the latest news from Haven",
+        send: "Send"
+    }
+}

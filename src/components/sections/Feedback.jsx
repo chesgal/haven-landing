@@ -60,7 +60,7 @@ const Feedback = () => {
                         {
                             FeedbackLabels.testimonials.map((testimonial, index) => (
                                 <div key={index} className="lg:px-6 md:px-4 w-full px-3">
-                                    <div key={index} className="flex flex-col w-full bg-white gap-4 shadow relative rounded-lg lg:p-6 md:p-4 m-3">
+                                    <div className="flex flex-col w-full bg-white gap-4 shadow relative rounded-lg lg:p-6 md:p-4 m-3">
                                         <img className="w-20 h-20 rounded-full object-cover object-top" src={QuoteMark} />
                                         <div className="flex flex-col justify-center gap-6">
                                             <p className="text-2xl font-light text-[#565656]">{testimonial.text}</p>
