@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../../assets/haven-logo.svg'
+import Logo from '../../assets/haven-logo.svg'
 import { NavUrls } from '../Content'
 import { AiOutlineSearch } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -16,7 +16,7 @@ const NavBar = () => {
         <header className="w-full h-auto bg-transparent z-10 font-krub font-bold text-white fixed top-0 left-0">
             <nav className="w-full flex justify-between items-center font-large xl:px-40 lg:px-20 md:px-10 px-5 py-5 gap-5">
                 <Link to="/" className="flex items-center">
-                    <img src={logo} alt="logo" className="sm:w-[160px] sm:h-[40px] w-[160px] h-[40px] object-contain max-w-none" />
+                    <img src={Logo} alt="logo" className="sm:w-[160px] sm:h-[40px] w-[160px] h-[40px] object-contain max-w-none" />
                 </Link>
                 <ul className="list-none lg:flex hidden flex-row justify-center items-center gap-4 whitespace-nowrap">
                     {NavUrls.map((menu, index) => (

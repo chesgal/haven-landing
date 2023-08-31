@@ -29,6 +29,75 @@ export const NavUrls = [
     },
 ];
 
+export const FooterLabels = {
+    navigation1: [
+        {
+            label: "Accounting",
+            url: "/accounting"
+        },
+        {
+            label: "Insurance",
+            url: "/insurance"
+        },
+        {
+            label: "KiwiSaver",
+            url: "/kiwisaver"
+        },
+        {
+            label: "Mortgages",
+            url: "/mortgages"
+        },
+    ],
+    navigation2: [
+        {
+            label: "Learn",
+            url: "/learn"
+        },
+        {
+            label: "Careers",
+            url: "/careers"
+        },
+        {
+            label: "About Us",
+            url: "/about"
+        },
+    ],
+    social: [
+        {
+            label: "LinkedIn",
+            url: "#"
+        },
+        {
+            label: "facebook",
+            url: "#"
+        }
+    ],
+    legal: [
+        {
+            label: "Haven Financial Advisers Limited Disclosure",
+            url: "#"
+        },
+        {
+            label: "Haven Mortgage Advisers Limited Disclosure",
+            url: "#"
+        },
+        {
+            label: "Feedback and Complaints",
+            url: "#"
+        }
+    ],
+    site: [
+        {
+            label: "Sitemap",
+            url: "#"
+        },
+        {
+            label: "Privacy Policy",
+            url: "#"
+        },
+    ]
+}
+
 export const HeroLabels = {
     heading: "Set yourself up for a brighter future.",
     subHeading: "At Haven, we provide all of the tools, advice and services you need to build a brighter future for yourself and your family. Since 2008, we’ve helped Kiwis secure their future through sound advice across Insurance, KiwiSaver, Mortgages and Accounting.",
