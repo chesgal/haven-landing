@@ -59,3 +59,13 @@ export const ServicesLabels = {
     more: "Read more",
     contactus: "Talk to us"
 }
+
+export const PromotionsLabels = {
+    heading: "Win a trip to the Cook Islands!",
+    subHeading: [
+        "Haven is giving away a trip for four to the Cook Islands worth over $6,000!",
+        `Simply sit down with a Haven adviser and you’ll go in the draw!* Plus, if you refer a friend, you’ll BOTH go in the draw to win a much-needed holiday.`,
+        "*Terms & Conditions Apply",
+    ],
+    more: "Learn more"
+}
