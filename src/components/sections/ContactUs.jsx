@@ -56,7 +56,8 @@ const ContactUs = () => {
 
 
     return (
-        <section className="w-full h-auto flex justify-center items-center font-krub">
+        <section className="w-full h-auto flex flex-col justify-center items-center font-krub">
+            <span id="contactUs">&nbsp;</span>
             <div className="lg:px-6 md:px-4 w-3/5 px-3">
                 <div className="flex flex-col w-full bg-white gap-4 shadow relative rounded-lg lg:p-6 md:p-4 m-3">
                     <h1 className="text-[#006BC0] text-5xl font-light text-center">{ContactUsLabels.heading}</h1>

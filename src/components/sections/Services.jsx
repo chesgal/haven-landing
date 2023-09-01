@@ -48,7 +48,7 @@ const Services = () => {
                                 </div>
                                 <div className="flex gap-2 pb-6 items-center whitespace-nowrap font-bold text-base">
                                     <button className="bg-transparent border border-white rounded-full text-white px-4 py-2">{ServicesLabels.more}</button>
-                                    <button className="bg-white rounded-full text-[#006BC0] px-4 py-2">{ServicesLabels.contactus}</button>
+                                    <a href="#contactUs" className="bg-white rounded-full text-[#006BC0] px-4 py-2">{ServicesLabels.contactus}</a>
                                 </div>
                             </div>
                         )

@@ -26,7 +26,7 @@ const NavBar = () => {
                     ))}
                 </ul>
                 <div className="flex flex-row gap-2 whitespace-nowrap">
-                    <button className="bg-white rounded-full text-[#00BCE7] px-4 py-2">Contact Us</button>
+                    <a href="#contactUs" className="bg-white rounded-full text-[#00BCE7] px-4 py-2">Contact Us</a>
                     <button className="text-2xl"><AiOutlineSearch /></button>
 
                     <div className="lg:hidden flex cursor-pointer" onClick={handleToggle}>

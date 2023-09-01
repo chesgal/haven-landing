@@ -52,7 +52,7 @@ const Feedback = () => {
                     <h3 className="text-4xl">{FeedbackLabels.heading}</h3>
                     <p className="text-lg font-bold mt-8 mb-4">{FeedbackLabels.description}</p>
                     <div className="flex">
-                        <button className="bg-white rounded-full text-[#006BC0] px-4 py-2 font-bold">{FeedbackLabels.contactus}</button>
+                        <a href="#contactUs" className="bg-white rounded-full text-[#006BC0] px-4 py-2 font-bold">{FeedbackLabels.contactus}</a>
                     </div>
                 </div>
                 <div className="w-full md:col-span-2 lg:px-8 md:px-2 h-auto mt-4">
