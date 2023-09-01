@@ -27,7 +27,7 @@ const NavBar = () => {
     return (
         <header className={`w-full h-auto ${navBarColor} z-10 font-krub font-bold text-white fixed top-0 left-0`}>
             <nav className="w-full flex justify-between items-center md:text-lg xl:px-40 lg:px-20 md:px-10 px-3 md:py-5 py-3 md:gap-5 gap-3">
-                <Link to="/" className="flex items-center">
+                <Link to="/" className="flex items-center" onClick={() => setActive(false)}>
                     <img src={Logo} alt="logo" className="xl:w-[160px] w-[110px] object-contain max-w-none" />
                 </Link>
                 <ul className="list-none lg:flex hidden flex-row justify-center text-base items-center gap-3 whitespace-nowrap">

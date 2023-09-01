@@ -60,12 +60,12 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-4 min-[1145px]:flex-row min-[1145px]:justify-between font-bold text-sm lg:px-20 md:px-12 px-6 pt-5 whitespace-nowrap">
                 <div className="flex">
-                    <ul className="flex md:flex-row flex-col gap-2">
+                    <ul className="flex min-[900px]:flex-row flex-col gap-2">
                         {
                             FooterLabels.legal.map((link, index) => {
                                 let separator = "";
                                 if (index < FooterLabels.legal.length - 1) {
-                                    separator = <span className="hidden md:flex">|</span>
+                                    separator = <span className="hidden min-[900px]:flex">|</span>
                                 }
                                 return (
                                     <>
