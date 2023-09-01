@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../assets/haven-logo.svg'
 import { NavUrls } from '../Content'
@@ -7,13 +7,26 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 const NavBar = () => {
     const [active, setActive] = useState(false);
+    const [navBarColor, setNavBarColor] = useState("transparent")
 
     const handleToggle = () => {
         setActive(!active);
     }
+
+    const listenScrollEvent = () => {
+        window.scrollY > 20 ? setNavBarColor("bg-sky-700/90") : setNavBarColor("bg-transparent");
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent);
+        return () => {
+            window.removeEventListener("scroll", listenScrollEvent);
+        };
+    }, []);
+
     // fixed top-0 left-0
     return (
-        <header className="w-full h-auto bg-transparent z-10 font-krub font-bold text-white fixed top-0 left-0">
+        <header className={`w-full h-auto ${navBarColor} z-10 font-krub font-bold text-white fixed top-0 left-0`}>
             <nav className="w-full flex justify-between items-center font-large xl:px-40 lg:px-20 md:px-10 px-5 py-5 gap-5">
                 <Link to="/" className="flex items-center">
                     <img src={Logo} alt="logo" className="sm:w-[160px] sm:h-[40px] w-[160px] h-[40px] object-contain max-w-none" />
