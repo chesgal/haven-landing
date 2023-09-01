@@ -7,7 +7,7 @@ import ContactUs from '../sections/ContactUs'
 
 const HomePage = () => {
     return (
-        <div className="font-krub">
+        <div className="flex flex-col font-krub">
             <HeroSection />
             <Services />
             <Feedback />

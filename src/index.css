@@ -5,16 +5,18 @@
 @tailwind utilities;
 
 body {
-  width: 100vw;
   background: linear-gradient(194deg, #00BCE7 0%, #006BC0 50.52%, #00BCE7 97.40%) fixed;
 }
 
 body>div {
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
 }
 
 a.active {
   color: black !important;
+}
+
+.slick-current .slider-content {
+  background-color: white;
 }

@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <footer className="w-full flex flex-col text-white pb-20">
-            <div className="w-full h-auto  justify-between lg:px-20 md:px-12 px-6 pt-16 gap-8 md:gap-4 lg:gap-0">
-                <div className="flex flex-col md:flex-row justify-between w-full border-b pb-5">
+            <div className="flex w-full justify-between lg:px-20 md:px-12 px-6 pt-16">
+                <div className="flex flex-col md:flex-row justify-between w-full border-b pb-5 gap-8 md:gap-4 lg:gap-0">
                     <div className="flex flex-col items-start gap-4">
                         <img src={Logo} alt="Logo" className="w-28" />
                         <div className="font-light text-3xl">
@@ -58,38 +58,42 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row md:justify-between font-bold text-sm lg:px-20 md:px-12 px-6 pt-5">
+            <div className="flex flex-col gap-4 min-[1145px]:flex-row min-[1145px]:justify-between font-bold text-sm lg:px-20 md:px-12 px-6 pt-5 whitespace-nowrap">
                 <div className="flex">
                     <ul className="flex md:flex-row flex-col gap-2">
                         {
                             FooterLabels.legal.map((link, index) => {
                                 let separator = "";
                                 if (index < FooterLabels.legal.length - 1) {
-                                    separator = <span className="invisible md:visible"> | </span>
+                                    separator = <span className="hidden md:flex">|</span>
                                 }
                                 return (
-                                    <li key={index}>
-                                        <Link to={link.url} className="hover:underline">{link.label}</Link>
+                                    <>
+                                        <li key={index}>
+                                            <Link to={link.url} className="hover:underline">{link.label}</Link>
+                                        </li>
                                         {separator}
-                                    </li>
+                                    </>
                                 )
                             })
                         }
                     </ul>
                 </div>
-                <div className="flex md:mt-0 mt-5">
+                <div className="flex">
                     <ul className="flex md:flex-row flex-col gap-2">
                         {
                             FooterLabels.site.map((link, index) => {
                                 let separator = "";
                                 if (index < FooterLabels.site.length - 1) {
-                                    separator = <span className="invisible md:visible"> | </span>
+                                    separator = <span className="hidden md:flex"> | </span>
                                 }
                                 return (
-                                    <li key={index}>
-                                        <Link to={link.url} className="hover:underline">{link.label}</Link>
+                                    <>
+                                        <li key={index}>
+                                            <Link to={link.url} className="hover:underline">{link.label}</Link>
+                                        </li>
                                         {separator}
-                                    </li>
+                                    </>
                                 )
                             })
                         }

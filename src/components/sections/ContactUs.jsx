@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button, Row, Col } from 'react-bootstrap'
+import { Form, Row, Col } from 'react-bootstrap'
 import { ContactUsLabels } from '../Content'
 import validator from 'validator'
 
@@ -56,15 +56,15 @@ const ContactUs = () => {
 
 
     return (
-        <section className="w-full h-auto flex flex-col justify-center items-center font-krub">
+        <section className="w-full flex flex-col justify-center items-center lg:py-40 py-20">
             <span id="contactUs">&nbsp;</span>
-            <div className="lg:px-6 md:px-4 w-3/5 px-3">
-                <div className="flex flex-col w-full bg-white gap-4 shadow relative rounded-lg lg:p-6 md:p-4 m-3">
-                    <h1 className="text-[#006BC0] text-5xl font-light text-center">{ContactUsLabels.heading}</h1>
-                    <p className="text-2xl font-light text-center">{ContactUsLabels.description}</p>
-                    <Form noValidate validated={validated} onSubmit={handleSubmit} className="text-base">
-                        <Row className="mb-3">
-                            <Col sm>
+            <div className="flex lg:px-6 md:px-4 lg:w-3/5 px-3">
+                <div className="flex flex-col w-full bg-white gap-6 shadow rounded-lg lg:p-30 md:p-20 p-4">
+                    <h1 className="text-[#006BC0] md:text-5xl text-4xl font-light text-center">{ContactUsLabels.heading}</h1>
+                    <p className="md:text-2xl text-xl font-light text-center md:mx-20">{ContactUsLabels.description}</p>
+                    <Form noValidate validated={validated} onSubmit={handleSubmit} className="md:text-xl text-sm">
+                        <Row>
+                            <Col sm className="mb-3">
                                 <Form.Group controlId="contactUsFirstName">
                                     <Form.Label>{ContactUsLabels.form.firstname}<span className="text-[#ff0000]">*</span></Form.Label>
                                     <Form.Control required type="text" placeholder={ContactUsLabels.form.firstname} />
@@ -74,7 +74,7 @@ const ContactUs = () => {
                                 </Form.Group>
                             </Col>
 
-                            <Col sm>
+                            <Col sm className="mb-3">
                                 <Form.Group controlId="contactUsLastName">
                                     <Form.Label>{ContactUsLabels.form.lastname}<span className="text-[#ff0000]">*</span></Form.Label>
                                     <Form.Control required type="text" placeholder={ContactUsLabels.form.lastname} />
@@ -84,8 +84,8 @@ const ContactUs = () => {
                                 </Form.Group>
                             </Col>
                         </Row>
-                        <Row className="mb-3">
-                            <Col sm>
+                        <Row>
+                            <Col sm className="mb-3">
                                 <Form.Group as={Col} controlId="contactUsEmail">
                                     <Form.Label>{ContactUsLabels.form.email}<span className="text-[#ff0000]">*</span></Form.Label>
                                     <Form.Control required type="email" placeholder={ContactUsLabels.form.email} />
@@ -95,7 +95,7 @@ const ContactUs = () => {
                                 </Form.Group>
                             </Col>
 
-                            <Col sm>
+                            <Col sm className="mb-3">
                                 <Form.Group as={Col} controlId="contactUsPhone">
                                     <Form.Label>{ContactUsLabels.form.contactno}<span className="text-[#ff0000]">*</span></Form.Label>
                                     <Form.Control required type="tel" placeholder={ContactUsLabels.form.contactno} />
@@ -106,19 +106,19 @@ const ContactUs = () => {
                             </Col>
                         </Row>
 
-                        <Row className="mb-3">
-                            <Col sm>
+                        <Row>
+                            <Col sm className="mb-3">
                                 <Form.Group as={Col} controlId="contactUsTime">
                                     <Form.Label>{ContactUsLabels.form.time}</Form.Label>
                                     <Form.Select defaultValue="9:00am">
                                         <option>9:00am</option>
-                                        <option value="9:30am">One</option>
-                                        <option value="10:00am">Two</option>
-                                        <option value="10:30am">Three</option>
+                                        <option value="1">9:30am</option>
+                                        <option value="2">10:00am</option>
+                                        <option value="3">10:30am</option>
                                     </Form.Select>
                                 </Form.Group>
                             </Col>
-                            <Col sm>
+                            <Col sm className="mb-3">
                                 <Form.Group as={Col} controlId="contactUsTopic">
                                     <Form.Label>{ContactUsLabels.form.topic}</Form.Label>
                                     <Form.Select defaultValue="9:00am">
@@ -139,7 +139,7 @@ const ContactUs = () => {
                             <Form.Group as={Col} className="mb-3" id="contactUsSubscribe">
                                 <Form.Check type="checkbox" label={ContactUsLabels.form.subscribe} />
                             </Form.Group>
-                            <Button type="submit" className="bg-[#00BCE7] rounded-full text-white px-4 py-2 h-10">Send</Button>
+                            <button type="submit" className="bg-[#00BCE7] rounded-full text-white px-4 py-2 h-10">Send</button>
                         </div>
                     </Form>
                 </div>
